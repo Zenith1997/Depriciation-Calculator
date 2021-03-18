@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <script src="https://code.angularjs.org/1.8.2/angular.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main" ng-app="myApp" ng-controller="myController">
+
+        <div class="container">
+            <form ng-submit="submit()" class="appointment-form" id="appointment-form">
+                <h2>education appointment form</h2>
+                <div class="form-group-1">
+                    <input type="number" name="title" id="title" placeholder="Value" required ng-model="value" />
+                    <input type="number" name="name" id="name" placeholder="Scrap Value" required ng-model="scrap" />
+                    <input type="number" name="email" id="email" placeholder="Useful Life" required ng-model="useLife" />
+                    <input type="number" name="phone_number" id="phone_number" placeholder="Service Period" required ng-model="workLife" />
+                </div>
+                <div class="form-submit">
+                    <input type="submit" name="submit" id="submit" class="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <h2>Results</h2>
+                <table>
+                    <thead>
+                        <td>Year</td>
+                        <td>Value</td>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="val in newValues">
+                            <td>{{val.year}}</td>
+                            <td>{{val.value}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+<!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
