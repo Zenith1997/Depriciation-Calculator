@@ -183,7 +183,7 @@ body {
 
 .container {
     width: 586px;
-   
+   background-color:white;
     margin: 0px 100px 0px 100px;
     border-radius: 10px;
     -moz-border-radius: 10px;
